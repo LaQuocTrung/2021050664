@@ -1,0 +1,29 @@
+h3 {
+    color: orange;
+}
+#title {
+    background-color: aqua; /*id dùng #*/
+}
+.bg {
+    background-color: blueviolet; /*class dùng .*/
+}
+p {
+    color: red;
+    background-color: blue;
+}
+.box1 {
+    color: green;
+    background-color: yellow;
+    width: 50%; /*chiều rộng 50% khung chứa*/
+    margin: 50px auto; /*canh giữa*/
+}
+.box2 {
+    color: blue;
+    background-color: orange;
+    margin: 50px 100px; /*margin: trên/dưới trái/phải theo thứ tự trên phải dưới trái*/
+}
+.box3 {
+    color: red;
+    background-color: black;
+    
+}
