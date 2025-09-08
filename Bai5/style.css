@@ -20,44 +20,71 @@ ul{
     text-decoration: none; /*bỏ gạch chân*/
     font-size: larger;
     font-weight: bold;
+
 }
 .danhmuc-lienket:hover {
     color: grey;
 }
 .logo{
     height: 40px;
-    background-color: grey;
+    background-color: white(182, 182, 204);
+}
+.logo-humg {
+    height: 20px;
+    vertical-align: middle;
+    margin: 5px;
 }
 .noidung-trai{
     width: 80%;
-    background-color: #2fa4e7;
-    border-radius: 10px 10px 0 0;    
+    height: 380px;
+    background-color: white;
+    border-radius: 10px;    
 }
 .noidung-phai{
     width: 20%;
+    height: 1000px;
     background-color: chocolate;    
 }
 .tieude{
-    background-color: #1a8dc1
-    padding: 20px;
+   background-color: #2fa4e7; 
+    padding: 10px;
     color: white;
-    font-size: xx-large;
+    font-size: x-large;
     font-weight: bold;
-    boder-radius: 10px 10px 0px 0px;
+    border-radius: 10px 10px 0px 0px;
 }
 .tintuc-danhsach{
     display: flex;
     justify-content: space-between;
+    gap: 10px;
 }
 .baiviet{
-    background-color: grey;
+    background-color: white;
     height: 200px;
     width: 32%;
 }
 .ngaythangnam{
+    height: 10%;
+    background-color: rgb(197, 197, 216);
+}
+
+.anhbaiviet{
+    height: 200px;
+    width: 100%;
+}
+.tenbaiviet{
+    height: 30%;
+    display: flex;
+    background-color: lightgray;
+}
+.anhthongbao{
+    height: 150px;
+    width: 100%;
+    margin-top: 10px;
+    border-radius: 10px;
     background-color: white;
-    text-align: center;
-    font-size: large;
-    font-weight: bold;
-    padding: 10px;
+    overflow: hidden;
+    border: 1px solid #ddd;
+    background: white;
+    
 }

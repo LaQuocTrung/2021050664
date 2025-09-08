@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Cổng thông tin Đào tạo Đại học HUMG</title>
+  <style>
+    /* Reset và base */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      color: #333;
+      background: #f4f4f4;
+    }
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+    .container {
+      width: 90%;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    /* Header */
+    header {
+      background: #004080;
+      color: #fff;
+      padding: 10px 0;
+    }
+    .header__inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .header__logo {
+      display: flex;
+      align-items: center;
+    }
+    .header__logo img {
+      height: 40px;
+      margin-right: 10px;
+    }
+    .header__logo h1 {
+      font-size: 1.2rem;
+      font-weight: 400;
+    }
+    nav.header__nav ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+    }
+    nav.header__nav a {
+      color: #fff;
+      font-size: 0.95rem;
+      padding: 5px 8px;
+      transition: background 0.2s;
+    }
+    nav.header__nav a:hover {
+      background: rgba(255,255,255,0.2);
+      border-radius: 4px;
+    }
+
+    /* Hero */
+    .hero {
+      background: url('hero-bg.jpg') center/cover no-repeat;
+      color: #fff;
+      text-align: center;
+      padding: 60px 20px;
+    }
+    .hero h2 {
+      font-size: 2rem;
+      margin-bottom: 10px;
+    }
+    .hero p {
+      font-size: 1rem;
+      opacity: 0.9;
+    }
+
+    /* Quick-links */
+    .quick-links {
+      margin: 40px 0;
+    }
+    .quick-links ul {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(120px,1fr));
+      gap: 20px;
+      list-style: none;
+    }
+    .quick-links__item {
+      background: #fff;
+      padding: 20px;
+      text-align: center;
+      border-radius: 6px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      transition: transform 0.2s;
+    }
+    .quick-links__item:hover {
+      transform: translateY(-4px);
+    }
+    .quick-links__item i {
+      font-size: 1.5rem;
+      margin-bottom: 8px;
+      display: block;
+      color: #004080;
+    }
+    .quick-links__item span {
+      display: block;
+      font-size: 0.9rem;
+      margin-top: 4px;
+    }
+
+    /* News */
+    .news {
+      background: #fff;
+      padding: 20px;
+      border-radius: 6px;
+      margin-bottom: 40px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+    .news h3 {
+      font-size: 1.3rem;
+      border-bottom: 3px solid #004080;
+      padding-bottom: 8px;
+      margin-bottom: 20px;
+      color: #004080;
+    }
+    .news ul {
+      list-style: none;
+    }
+    .news-item {
+      display: flex;
+      align-items: baseline;
+      gap: 12px;
+      margin-bottom: 15px;
+    }
+    .news-item time {
+      width: 80px;
+      font-size: 0.9rem;
+      color: #666;
+      flex-shrink: 0;
+    }
+    .news-item a {
+      font-size: 1rem;
+      color: #004080;
+      transition: color 0.2s;
+    }
+    .news-item a:hover {
+      color: #00264d;
+      text-decoration: underline;
+    }
+
+    /* Footer */
+    footer {
+      background: #222;
+      color: #ddd;
+      padding: 20px 0;
+      text-align: center;
+      font-size: 0.9rem;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .header__inner { flex-direction: column; gap: 10px; }
+      nav.header__nav ul { flex-wrap: wrap; justify-content: center; gap: 10px; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="container header__inner">
+      <div class="header__logo">
+        <img src="logo.png" alt="HUMG Logo" />
+        <h1>Cổng đào tạo ĐH HUMG</h1>
+      </div>
+      <nav class="header__nav">
+        <ul>
+          <li><a href="#">Trang chủ</a></li>
+          <li><a href="#">Tra cứu</a></li>
+          <li><a href="#">Đăng ký học phần</a></li>
+          <li><a href="#">Thông báo</a></li>
+          <li><a href="#">Email HUMG</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container">
+      <h2>Chào mừng đến với Cổng Đào tạo Đại học HUMG</h2>
+      <p>Quản lý học phần, tra cứu điểm, nhận thông báo kịp thời.</p>
+    </div>
+  </section>
+
+  <section class="container quick-links">
+    <ul>
+      <li class="quick-links__item">
+        <i class="icon-search"></i>
+        <span>Tra cứu kết quả</span>
+      </li>
+      <li class="quick-links__item">
+        <i class="icon-register"></i>
+        <span>Đăng ký học phần</span>
+      </li>
+      <li class="quick-links__item">
+        <i class="icon-calendar"></i>
+        <span>Thời khóa biểu</span>
+      </li>
+      <li class="quick-links__item">
+        <i class="icon-bell"></i>
+        <span>Thông báo</span>
+      </li>
+    </ul>
+  </section>
+
+  <section class="container news">
+    <h3>Thông báo mới</h3>
+    <ul>
+      <li class="news-item">
+        <time datetime="2023-09-26">26/09/2023</time>
+        <a href="#">Hướng dẫn xây dựng nội dung Thực tập, Đồ án tốt nghiệp 2023-2024</a>
+      </li>
+      <li class="news-item">
+        <time datetime="2023-09-25">25/09/2023</time>
+        <a href="#">Chứng nhận đạt kiểm định chất lượng giáo dục theo tiêu chuẩn quốc gia</a>
+      </li>
+      <li class="news-item">
+        <time datetime="2023-09-24">24/09/2023</time>
+        <a href="#">Lễ ký kết hợp tác giữa HUMG và Công ty HVCG</a>
+      </li>
+    </ul>
+  </section>
+
+  <footer>
+    <div class="container">
+      © 2025 Trường ĐH Mỏ – Địa chất | Địa chỉ: Đường Văn Cao, Hà Nội | Điện thoại: (024) 3852 3079
+    </div>
+  </footer>
+
+</body>
+</html>
