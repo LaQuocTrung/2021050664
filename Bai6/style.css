@@ -1,0 +1,106 @@
+body{
+    margin: 0%;
+}
+header{
+    background-color: black;
+}
+.header-container{
+    background-color: black;
+    display: flex;
+    justify-self: space-between; /* căn đều 2 bên */
+    width: 70%;
+    margin: auto;  
+}
+.danhmuc{
+    display: flex;
+    align-items: center; /* canh giữa theo chiều dọc */
+    gap: 20px; /* khoảng cách giữa các phần tử */
+    padding: 10px 0; /* padding trên dưới 10px, trái phải 0 */
+}
+.logo{
+    width: 15%;
+}
+ul{
+    list-style: none;
+    display: flex;
+    gap: 20px; /* khoảng cách giữa các phần tử */
+    padding: 0;
+}
+a{
+    text-decoration: none;
+    font-weight: bolder;
+    color: #9b9b9b;
+    font-size: 16px;
+    font-family: "SFProDisplay", Arial, sans-serif;
+}
+a:hover{ /* hover khi rê chuột vào */
+    color: orange;
+}
+.chucnang{
+    display: flex;
+    align-items: center; /* canh giữa theo chiều dọc */
+    gap: 20px; /* khoảng cách giữa các phần tử */
+}
+.muagoi{
+    background-color: orange;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    width: 100px;
+    font-weight: bolder;
+}
+button:hover{
+    color:  #ff9900;  
+}
+.dangnhap{
+    background-color: black;
+    color: #9b9b9b;
+    border: none;
+    font-weight: bolder;
+    font-family: "SFProDisplay", Arial, sans-serif;
+    width: 100px;
+}
+main{
+    background-color: #131314;
+    color: white;
+    width: 100%;
+    font-family: "SFProDisplay", Arial, sans-serif;
+    
+}
+.quangcao{
+    display: flex;
+    justify-content: center;
+}
+.container{
+    width: 70%;
+    margin: auto;
+    background-color: #131314;
+}
+.banner{
+    width: 98%;
+}
+.qc{
+    width: 98%;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+.danhsach{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.phim{
+    width: 32%;
+}
+.phim img{
+    width: 100%;
+    border-radius: 5px;
+}
+.tentheloai{
+    font-size: 20px;
+    font-weight: bolder;
+    margin-top: 20px;
+    font-family: "SFProDisplay", Arial, sans-serif;
+}
+

@@ -1,0 +1,184 @@
+body {
+    margin: 0;
+}
+
+header {
+    background-color: black;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    width: 70%;
+    margin: auto;
+}
+
+.danhmuc {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 10px 0;
+}
+
+.logo {
+    width: 15%;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    gap: 20px
+}
+
+a {
+    text-decoration: none;
+    font-weight: bolder;
+    color: #9b9b9b;
+    font-size: 16px;
+    font-family: "SFProDisplay", Arial, sans-serif;
+}
+
+a:hover {
+    color: orange;
+}
+
+.chucnang {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.muagoi {
+    background-color: orange;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    width: 100px;
+    border-radius: 10px;
+}
+
+.dangnhap {
+    background-color: black;
+    color: white;
+    border: none;
+    width: 100px;
+}
+
+main {
+    background-color: #131314;
+    color: white;
+    width: 100%;
+    /* height: 1000px; */
+}
+
+.quangcao {
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    width: 70%;
+    background-color: black;
+    /* height: 1000px; */
+    margin: auto;
+}
+
+.banner {
+    width: 98%;
+}
+
+.qc {
+    margin-top: 10px;
+    width: 98%;
+    border-radius: 10px;
+}
+
+.tentheloai {
+    margin: 20px;
+    font-family: "SFProDisplay", Arial, sans-serif;
+    color: #fff;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.danhsach {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 20px;
+}
+
+.phim {
+    width: 19%;
+}
+
+.phim img {
+    width: 100%;
+}
+.ten{
+    color: #fff;
+    font-family: "SFProDisplay", Arial, sans-serif;
+}
+.footer-separator {
+    width: 100%;
+    border: .5px solid #252525;
+    margin: 30px 150px;
+}
+footer {
+  background-color: #111;
+  padding: 40px 80px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+}
+
+.footer-column {
+        vertical-align: middle;
+    border-style: none;
+}
+
+.footer-column h3 {
+  font-size: 16px;
+  margin-bottom: 15px;
+  color: #fff;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-column ul li {
+  margin-bottom: 8px;
+}
+
+.footer-column ul li a {
+  color: #ddd;
+  text-decoration: none;
+}
+
+.footer-column ul li a:hover {
+  color: #f60; /* màu cam khi hover */
+}
+
+.logo img {
+  width: 120px;
+  margin-bottom: 15px;
+}
+
+.contact i {
+  margin-right: 8px;
+}
+
+.social a {
+  margin-right: 15px;
+  font-size: 20px;
+  color: #ddd;
+  text-decoration: none;
+}
+
+.social a:hover {
+  color: #f60;
+}

@@ -1,0 +1,112 @@
+body{
+    margin: 0;
+}
+ul{
+    margin: 0;
+    padding: 0;
+}
+.danhmuc{
+    background-color: #2fa4e7;
+}   
+.danhmuc-danhsach {
+    display: flex;
+    list-style: none; /*bỏ đi dấu chấm*/   
+}  
+.danhmuc-muc { 
+    padding: 14px 16px;
+} 
+.danhmuc-lienket {
+    color: white;
+    text-decoration: none; /*bỏ gạch chân*/
+    font-size: larger;
+    font-weight: bold;
+
+}
+.danhmuc-lienket:hover {
+    color: grey;
+}
+.logo{
+    height: 80px;
+    background-color: white(182, 182, 204);
+}
+.logo-humg {
+    height: 20px;
+    vertical-align: middle;
+    margin: 5px;
+}
+.noidung-trai{
+    width: 80%;
+    height: 380px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;    
+}
+.noidung-phai{
+    width: 20%;
+    height: 380px;
+    background-color: chocolate;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;    
+}
+.tieude{
+   background-color: #2fa4e7; 
+    padding: 10px;
+    color: white;
+    font-size: x-large;
+    font-weight: bold;
+    border-radius: 10px 10px 0px 0px;
+}
+.tintuc-danhsach{
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+.baiviet{
+    background-color: white;
+    height: 200px;
+    width: 32%;
+}
+.ngaythangnam{
+    height: 10%;
+    background-color: #cceeff;
+}
+
+.anhbaiviet{
+    height: 200px;
+    width: 100%;
+}
+.tenbaiviet{
+    height: 30%;
+    display: flex;
+    background-color: #cceeff;
+    align-items: center;
+}
+.thongbao-danhsach{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: white;
+    height: 350px;
+    padding: 10px;
+}
+.thongbao-item{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    border-bottom: 1px solid gray;
+}
+.anhthongbao{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+.ngaythongbao{
+    height: 10%;
+    margin-top: 10px;
+    width: 30%;
+    text-align: center;
+    border-radius: 10px;
+    padding: 5px;
+
+}
