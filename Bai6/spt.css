@@ -1,0 +1,76 @@
+body {
+    background-color: grey; /* Nền xám */
+    color: white;           /* Chữ trắng */
+    margin: 0;              /* Xóa khoảng trắng mặc định */
+}
+
+.container {
+    width: 35%;             /* Hộp rộng 35% màn hình */
+    margin: 40px auto;      /* Căn giữa, cách trên/dưới 40px */
+    background-color: black;/* Nền đen */
+    padding: 40px 0;        /* Cách trên/dưới 40px */
+    border-radius: 15px;    /* Bo tròn 15px */
+}
+
+.noidung {
+    width: 70%;             /* Khối nội dung rộng 70% */
+    margin: auto;           /* Căn giữa */
+}
+
+.form {
+    width: 80%;             /* Form rộng 80% */
+    margin: auto;           /* Căn giữa */
+    text-align: center;     /* Căn chữ/nút ở giữa */
+}
+
+.khoi-nut {
+    margin-bottom: 15px;    /* Cách dưới 15px */
+}
+
+button {
+    width: 100%;            /* Nút chiếm toàn bộ chiều ngang */
+    padding: 10px 0;        /* Cao 10px */
+    border-radius: 20px;    /* Bo tròn 20px */
+    color: white;           /* Chữ trắng */
+    background-color: black;/* Nền đen */
+    border: 2px solid white;/* Viền trắng */
+}
+
+.noidung-tren {
+    border-bottom: 2px solid grey; /* Vạch ngăn cách màu xám */
+}
+
+input {
+    width: 100%;            /* Ô nhập chiếm toàn bộ chiều ngang */
+    padding: 10px 0;        /* Cao 10px */
+    border-radius: 5px;     /* Bo nhẹ */
+    background-color: black;/* Nền đen */
+    color: white;           /* Chữ trắng */
+    border: 2px solid white;/* Viền trắng */
+}
+
+.form-duoi {
+    width: 80%;             /* Phần dưới rộng 80% */
+    background-color: black;/* Nền đen */
+    margin: auto;           /* Căn giữa */
+}
+
+.google {
+    width: 100%;            /* Nút Google chiếm toàn bộ */
+    padding: 10px 0;        /* Cao 10px */
+    border-radius: 20px;    /* Bo tròn 20px */
+    background-color: green;/* Nút xanh lá */
+    color: black;           /* Chữ đen */
+    border: none;           /* Không viền */
+}
+
+a {
+    color: white;           /* Link chữ trắng */
+}
+
+footer {
+    width: 100%;            /* Footer chiếm toàn bộ */
+    position: fixed;        /* Cố định ở dưới màn hình */
+    bottom: 0;              /* Sát mép dưới */
+    background-color: black;/* Nền đen */
+}

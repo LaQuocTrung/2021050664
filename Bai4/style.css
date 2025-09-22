@@ -15,12 +15,12 @@ p {
     color: green;
     background-color: yellow;
     width: 50%; /*chiều rộng 50% khung chứa*/
-    margin: 50px auto; /*canh giữa*/
+    margin: 50px auto; /*có auto là canh giữa*/
 }
 .box2 {
     color: blue;
     background-color: orange;
-    margin: 50px 100px; /*margin: trên/dưới trái/phải theo thứ tự trên phải dưới trái*/
+    margin: 50px 100px; /*margin: theo thứ tự trên phải dưới trái*/
 }
 .box3 {
     color: red;

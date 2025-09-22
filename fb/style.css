@@ -1,0 +1,34 @@
+body {
+    background-color: gray; /* Nền xám toàn trang */
+    color: white;           /* Chữ trắng mặc định */
+    margin: 0;              /* Xóa khoảng trắng mặc định */
+}
+
+.container {
+    background-color: #000; /* Hộp chính nền đen */
+    width: 40%;             /* Rộng 40% màn hình */
+    margin: auto;           /* Căn giữa ngang */
+    height: 1000px;         /* Cao 1000px */
+}
+
+.noidung {
+    width: 70%;             /* Khối nội dung rộng 70% */
+    background-color: green;/* Nền xanh lá */
+    height: 500px;          /* Cao 500px */
+    margin: auto;           /* Căn giữa */
+}
+
+.form {
+    width: 80%;             /* Form rộng 80% trong container */
+    background-color: #000; /* Nền đen */
+    margin: auto;           /* Căn giữa */
+}
+
+.khoinut {
+    border-radius: 20px;    /* Bo tròn 20px */
+    width: 100%;            /* Nút chiếm toàn bộ chiều ngang */
+    padding: 10px;          /* Khoảng cách bên trong */
+    background-color: #000; /* Nền đen */
+    color: aliceblue;       /* Chữ xanh nhạt */
+    border: 2px solid white;/* Viền trắng dày 2px */
+}

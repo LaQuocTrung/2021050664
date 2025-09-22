@@ -1,106 +1,196 @@
-body{
-    margin: 0%;
+body {
+    margin: 0%; /* Bỏ hết khoảng trống mặc định của trình duyệt */
 }
-header{
-    background-color: black;
+
+header {
+    background-color: black; /* Header nền đen */
 }
-.header-container{
-    background-color: black;
-    display: flex;
-    justify-self: space-between; /* căn đều 2 bên */
-    width: 70%;
-    margin: auto;  
+
+.header-container {
+    background-color: black; 
+    display: flex; /* Dùng flexbox để chia logo và menu */
+    justify-self: space-between; /* ❌ không tác dụng với flex, nên đổi thành justify-content */
+    width: 70%;   /* Header container chiếm 70% màn hình */
+    margin: auto; /* Căn giữa */
 }
-.danhmuc{
-    display: flex;
-    align-items: center; /* canh giữa theo chiều dọc */
-    gap: 20px; /* khoảng cách giữa các phần tử */
-    padding: 10px 0; /* padding trên dưới 10px, trái phải 0 */
+
+.danhmuc {
+    display: flex;          /* Menu hiển thị ngang */
+    align-items: center;    /* Căn giữa theo chiều dọc */
+    gap: 20px;              /* Khoảng cách giữa các mục */
+    padding: 10px 0;        /* Padding trên/dưới 10px */
 }
-.logo{
-    width: 15%;
+
+.logo {
+    width: 15%; /* Logo chiếm 15% chiều ngang header */
 }
-ul{
-    list-style: none;
-    display: flex;
-    gap: 20px; /* khoảng cách giữa các phần tử */
-    padding: 0;
+
+ul {
+    list-style: none; /* Bỏ dấu chấm mặc định của ul */
+    display: flex;    /* Hiển thị các li ngang */
+    gap: 20px;        /* Khoảng cách giữa các li */
+    padding: 0;       /* Bỏ padding mặc định */
 }
-a{
-    text-decoration: none;
-    font-weight: bolder;
-    color: #9b9b9b;
+
+a {
+    text-decoration: none;            /* Bỏ gạch chân link */
+    font-weight: bolder;              /* In đậm */
+    color: #9b9b9b;                   /* Màu xám */
     font-size: 16px;
+    font-family: "SFProDisplay", Arial, sans-serif; /* Font chữ */
+}
+
+a:hover { /* Khi rê chuột vào link */
+    color: orange; /* Chuyển sang cam */
+}
+
+.chucnang {
+    display: flex;       /* Các nút chức năng ngang */
+    align-items: center; /* Căn giữa theo dọc */
+    gap: 20px;           /* Khoảng cách giữa các nút */
+}
+
+.muagoi {
+    background-color: orange; /* Nút nền cam */
+    color: white;             /* Chữ trắng */
+    border: none;             /* Không viền */
+    border-radius: 20px;      /* Bo tròn */
+    padding: 10px 20px;       /* Khoảng cách bên trong */
+    width: 100px;             /* Rộng cố định */
+    font-weight: bolder;      /* Chữ đậm */
+}
+
+button:hover {
+    color: #ff9900; /* Khi hover nút -> chữ chuyển màu cam nhạt */
+}
+
+.dangnhap {
+    background-color: black; /* Nút nền đen */
+    color: #9b9b9b;          /* Chữ xám */
+    border: none;            /* Không viền */
+    font-weight: bolder;     /* Chữ đậm */
     font-family: "SFProDisplay", Arial, sans-serif;
-}
-a:hover{ /* hover khi rê chuột vào */
-    color: orange;
-}
-.chucnang{
-    display: flex;
-    align-items: center; /* canh giữa theo chiều dọc */
-    gap: 20px; /* khoảng cách giữa các phần tử */
-}
-.muagoi{
-    background-color: orange;
-    color: white;
-    border: none;
-    border-radius: 20px;
-    padding: 10px 20px;
     width: 100px;
-    font-weight: bolder;
 }
-button:hover{
-    color:  #ff9900;  
-}
-.dangnhap{
-    background-color: black;
-    color: #9b9b9b;
-    border: none;
-    font-weight: bolder;
+
+main {
+    background-color: #131314; /* Nền tối cho phần nội dung */
+    color: white;              /* Chữ trắng */
+    width: 100%;               /* Chiếm toàn bộ chiều ngang */
     font-family: "SFProDisplay", Arial, sans-serif;
-    width: 100px;
 }
-main{
-    background-color: #131314;
-    color: white;
-    width: 100%;
-    font-family: "SFProDisplay", Arial, sans-serif;
-    
-}
-.quangcao{
+
+.quangcao {
     display: flex;
-    justify-content: center;
+    justify-content: center; /* Banner quảng cáo căn giữa */
 }
-.container{
-    width: 70%;
-    margin: auto;
+
+.container {
+    width: 70%;              /* Nội dung rộng 70% */
+    margin: auto;            /* Căn giữa */
     background-color: #131314;
 }
-.banner{
-    width: 98%;
+
+.banner {
+    width: 98%; /* Banner chiếm 98% khung */
 }
-.qc{
-    width: 98%;
-    margin-top: 10px;
-    border-radius: 10px;
+
+.qc {
+    width: 98%;         /* Quảng cáo phụ chiếm 98% */
+    margin-top: 10px;   /* Cách trên 10px */
+    border-radius: 10px;/* Bo góc */
 }
-.danhsach{
-    display: flex;
-    justify-content: space-between;
+
+.danhsach {
+    display: flex;                  /* Các mục phim hiển thị ngang */
+    justify-content: space-between; /* Chia đều khoảng cách */
     margin-top: 20px;
 }
-.phim{
-    width: 32%;
+
+.phim {
+    width: 32%; /* Mỗi phim chiếm khoảng 1/3 */
 }
-.phim img{
-    width: 100%;
-    border-radius: 5px;
+
+.phim img {
+    width: 100%;       /* Ảnh chiếm full khung phim */
+    border-radius: 5px;/* Bo góc ảnh */
 }
-.tentheloai{
+
+.tentheloai {
     font-size: 20px;
     font-weight: bolder;
     margin-top: 20px;
     font-family: "SFProDisplay", Arial, sans-serif;
 }
 
+/* Footer */
+.footer {
+  background-color: #111;       /* Footer nền đen */
+  padding: 30px 50px;           /* Khoảng cách trong */
+  display: flex;                /* Các cột ngang */
+  justify-content: space-between;/* Chia đều */
+  flex-wrap: wrap;              /* Khi màn nhỏ -> tự xuống hàng */
+}
+
+.footer-col {
+  flex: 1;            /* Các cột chia đều */
+  min-width: 200px;   /* Đảm bảo không nhỏ hơn 200px */
+  margin-bottom: 20px;/* Cách dưới */
+}
+
+.footer-col h4 {
+  font-size: 16px;
+  margin-bottom: 15px;
+  color: #f15a24;     /* Màu cam */
+}
+
+.footer-col ul {
+  list-style: none; /* Bỏ dấu chấm */
+  padding: 0;
+}
+
+.footer-col ul li {
+  margin-bottom: 8px; /* Khoảng cách giữa các dòng */
+}
+
+.footer-col ul li a {
+  text-decoration: none; /* Bỏ gạch chân */
+  color: #ddd;           /* Chữ xám nhạt */
+  font-size: 14px;
+}
+
+.footer-col ul li a:hover {
+  color: #fff; /* Hover thành trắng */
+}
+
+.footer .logo {
+  max-width: 150px; /* Logo footer giới hạn rộng */
+  margin-bottom: 10px;
+}
+
+.footer .badge {
+  max-width: 100px; /* Badge tải app */
+  margin-bottom: 10px;
+  display: block;
+}
+
+.contact p {
+  margin: 6px 0;
+  font-size: 14px;
+}
+
+.social-icons a {
+  display: inline-block;
+  margin-right: 10px;
+  color: #fff;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.social-icons a.fb:hover {
+  color: #3b5998; /* Facebook xanh */
+}
+
+.social-icons a.yt:hover {
+  color: #ff0000; /* YouTube đỏ */
+}

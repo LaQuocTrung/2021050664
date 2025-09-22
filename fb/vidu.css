@@ -1,0 +1,109 @@
+body {
+  margin: 0;                   /* Xóa khoảng cách mặc định bên ngoài của trang */
+  padding: 0;                  /* Xóa khoảng cách bên trong mặc định */
+  font-family: Arial, sans-serif; /* Chọn font chữ Arial, nếu không có thì dùng sans-serif */
+  background: #f0f2f5;         /* Đặt màu nền xám nhạt giống Facebook */
+}
+
+/* Chia 2 bên */
+.container {
+  display: flex;               /* Dùng flexbox để chia khối con thành các cột */
+  justify-content: space-between; /* Đẩy 2 khối con ra 2 bên trái - phải */
+  align-items: flex-start;     /* Căn các khối con theo phía trên cùng */
+  max-width: 1000px;           /* Giới hạn chiều rộng tối đa */
+  margin: 100px auto;          /* Canh giữa trang, trên/dưới cách 100px */
+  padding: 0 20px;             /* Thêm khoảng cách bên trái/phải 20px */
+}
+
+/* Bên trái */
+.left {
+  flex: 1;                     /* Chia đều 1 phần không gian cho cột trái */
+}
+.left h1 {
+  color: #1877f2;              /* Màu xanh đặc trưng Facebook */
+  font-size: 50px;             /* Kích thước chữ lớn */
+  margin: 0;                   /* Xóa khoảng cách mặc định của thẻ h1 */
+}
+.left p {
+  font-size: 20px;             /* Kích thước chữ mô tả */
+  color: #333;                 /* Màu chữ xám đậm */
+  margin-top: 10px;            /* Tạo khoảng cách phía trên đoạn chữ */
+}
+
+/* Bên phải */
+.right {
+  flex: 1;                     /* Chia 1 phần không gian cho cột phải */
+  display: flex;               /* Dùng flex để canh nội dung bên trong */
+  justify-content: flex-end;   /* Đẩy hộp login về phía bên phải */
+}
+.login-box {
+  background: white;           /* Màu nền trắng cho hộp đăng nhập */
+  padding: 20px;               /* Khoảng cách bên trong hộp */
+  width: 320px;                /* Đặt chiều rộng cố định cho hộp */
+  border: 1px solid #ccc;      /* Viền mỏng màu xám */
+  border-radius: 6px;          /* Bo góc nhẹ */
+  text-align: center;          /* Canh giữa nội dung bên trong */
+}
+.login-box input {
+  width: 90%;                  /* Ô input chiếm 90% chiều rộng hộp */
+  padding: 10px;               /* Khoảng cách bên trong ô input */
+  margin: 8px 0;               /* Cách trên/dưới 8px */
+  border: 1px solid #ccc;      /* Viền xám nhạt */
+  border-radius: 4px;          /* Bo góc nhẹ */
+}
+.login-box button {
+  width: 95%;                  /* Nút chiếm 95% chiều rộng hộp */
+  padding: 10px;               /* Khoảng cách bên trong nút */
+  background: #1877f2;         /* Màu xanh Facebook */
+  color: white;                /* Chữ màu trắng */
+  font-size: 16px;             /* Kích thước chữ */
+  border: none;                /* Bỏ viền mặc định */
+  border-radius: 4px;          /* Bo góc nhẹ */
+  cursor: pointer;             /* Khi rê chuột thì hiện bàn tay */
+}
+.login-box button:hover {
+  background: #166fe5;         /* Khi rê chuột vào, đổi sang xanh đậm hơn */
+}
+.login-box a {
+  display: block;              /* Hiển thị mỗi link thành 1 dòng riêng */
+  margin-top: 10px;            /* Cách trên 10px */
+  color: #1877f2;              /* Màu xanh */
+  font-size: 14px;             /* Cỡ chữ nhỏ */
+  text-decoration: none;       /* Bỏ gạch chân link */
+}
+.create-btn {
+  display: inline-block;       /* Hiển thị như 1 khối, nhưng vẫn cho xuống dòng */
+  margin-top: 15px;            /* Cách trên 15px */
+  padding: 10px;               /* Khoảng cách bên trong nút */
+  background: #42b72a;         /* Màu xanh lá */
+  color: white;                /* Chữ trắng */
+  border-radius: 4px;          /* Bo góc */
+  text-decoration: none;       /* Bỏ gạch chân */
+}
+.create-btn:hover {
+  background: #36a420;         /* Khi rê chuột đổi sang xanh lá đậm hơn */
+}
+
+/* Footer */
+.footer {
+  text-align: center;          /* Căn giữa nội dung footer */
+  margin-top: 30px;            /* Cách trên 30px */
+  font-size: 14px;             /* Kích thước chữ nhỏ */
+}
+.footer a {
+  font-weight: bold;           /* In đậm chữ link */
+  text-decoration: none;       /* Bỏ gạch chân */
+  color: black;                /* Màu đen */
+}
+
+/* Responsive cho điện thoại */
+@media (max-width: 768px) {     /* Khi màn hình nhỏ hơn hoặc bằng 768px */
+  .container {
+    flex-direction: column;    /* Đổi từ 2 cột → thành 1 cột */
+    text-align: center;        /* Căn giữa toàn bộ nội dung */
+  }
+  .right {
+    justify-content: center;   /* Hộp login căn giữa */
+    margin-top: 20px;          /* Cách trên 20px so với logo */
+  }
+}

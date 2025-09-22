@@ -1,0 +1,75 @@
+body{
+    margin: 0;               
+    
+}
+.nut{
+    display: flex;       /* Các nút chức năng ngang */
+    align-items: center; /* Căn giữa theo dọc */
+    border-radius: 10px;
+    background-color: aliceblue;
+    border: none;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+}
+header div{
+    padding: 10px;
+    font-weight: bold;
+    font-size: xx-large;
+    
+}
+
+.container{
+    display: flex;
+}
+
+.left{
+    background-color: aliceblue;
+    width: 20%;
+    
+    padding: 10px;
+    font-weight: bold;
+    
+}
+p{
+    height: 30px;
+}
+.center{
+    background-color: antiquewhite;
+    width: 40%;
+    
+    padding: 10px;
+}
+
+.right{
+    background-color: beige;
+    width: 40%;
+    
+    padding: 10px;
+    display: flex;
+}
+.o1{
+    width: 50%;
+    background-color: blue;
+    height: 100px;
+    gap: 10px;
+    margin: 10px;
+}
+.o2{
+    width: 50%;
+    background-color: blue;
+    height: 100px;
+    gap: 10px;
+    margin: 10px;
+}
+.o3{
+    width: 20%;
+    background-color: orange;
+    height: 100px;
+}
+.o4{
+    width: 20%;
+    background-color: red;
+    height: 100px;
+}
