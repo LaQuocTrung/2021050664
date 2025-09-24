@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 8</title>
+    <script src="scrip.js"></script>
+</head>
+<body>
+    <script>
+        let thongtindonhang = {
+            madonhang: "DH001",
+            thongtinkhachhang: {
+                hoten: "Nguyen Van A",
+                sodienthoai: "0123456789",
+                trangthaithanhvien: false,
+            },
+            danhsachsanpham: {
+                sp1:{
+                    masanpham: "cf",
+                    tensanpham: "Cà phê",
+                    soluong: 10,
+                    giatien: 50000,
+                },
+                sp2 :{
+                    masanpham: "mc",
+                    tensanpham: "Matcha",
+                    soluong: 10,
+                    giatien: 30000,
+                },
+                sp3:{    
+                    masanpham: "ts",
+                    tensanpham: "Trà sữa",
+                    soluong: 10,
+                    giatien: 40000,  
+                }
+            },
+            thanhtoanthanhcong: true,
+            diachigiaohang: "123 ABC, Phuong XYZ, Quan 1, TPHCM"
+        };
+        let tongsp1 =thongtindonhang.danhsachsanpham.sp1.soluong * thongtindonhang.danhsachsanpham.sp1.giatien;
+        let tongsp2 =thongtindonhang.danhsachsanpham.sp2.soluong * thongtindonhang.danhsachsanpham.sp2.giatien;
+        let tongsp3 =thongtindonhang.danhsachsanpham.sp3.soluong * thongtindonhang.danhsachsanpham.sp3.giatien;
+        let tongtien = tongsp1 + tongsp2 + tongsp3;
+
+        document.writeln("Độ dài của mã đơn hàng: " + thongtindonhang.madonhang.length + "<br>");
+        document.writeln("Tổng tiền đơn hàng: " + tongtien + "<br>");
+
+        var mystring = "Hello Trung";
+        document.writeln(mystring[0] + "<br>"); // mystring lấy ký tự đầu tiên
+        document.writeln(mystring.slice(1,4) + "<br>"); // mystring.slice(1,4) lấy từ vị trí 1 đến vị trí 4 (không lấy vị trí 4)
+        document.writeln(mystring.replace("Hello","Hi") + "<br>"); // mystring.replace("Hello","Hi") thay thế Hello thành Hi
+        document.writeln(mystring.toUpperCase("Hello") + "<br>"); // mystring.toUpperCase() chuyển thành chữ in hoa
+        document.writeln(mystring.toLowerCase("Hello") + "<br>"); // mystring.toLowerCase() chuyển thành chữ in thường
+        document.writeln(mystring.includes('e') + "<br>"); // mystring.includes('e') kiểm tra xem có chữ e trong chuỗi không, có trả về true, không trả về false
+        document.writeln(mystring.indexOf('e') + "<br>"); // mystring.indexOf('l') trả về vị trí của ký tự l trong chuỗi, nếu không có trả về -1
+        document.writeln(mystring.split(' ') + "<br>"); // mystring.split(' ') tách chuỗi thành mảng, lấy dấu cách làm ký tự tách
+        
+        let danhsach =["La Quốc Trung", "Nguyễn Văn A", "Trần Thị B", "Lê Văn C"];
+        document.writeln(danhsach[1].startswith("La")+ "<br>"); // kiểm tra xem phần tử thứ 1 có bắt đầu bằng La không
+        
+        let so = "123";
+        document.writeln(typeof(so) + "<br>"); // typeof(so) kiểm tra kiểu dữ liệu của biến so
+
+        var pi = 3.143123123;
+        document.writeln(pi.toFixed(2) + "<br>"); // pi.toFixed(2) làm tròn số pi đến 2 chữ số thập phân
+        
+        document.writeln(isNaN("abc") + "<br>"); // isNaN("abc") kiểm tra xem "abc" có phải là số không, nếu không phải trả về true, nếu là số trả về false
+        document.writeln(isFinite("123") + "<br>"); // isFinite("123") kiểm tra xem "123" có phải là số hữu hạn không, nếu là số hữu hạn trả về true, nếu không phải trả về false
+
+        let today = new Date(); 
+        document.writeln(today + "<br>"); // new Date() trả về ngày giờ hiện tại
+        document.writeln(today.getFullYear()); // getmonth getdate get hours getminutes getseconds
+
+    </script>
+</body>
+</html>
